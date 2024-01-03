@@ -16,3 +16,5 @@
  
 엔티티 분석
 
+![엔티티사진](https://github.com/choijunkeun/weblog/blob/main/src/main/resources/%ED%81%B4%EB%9E%98%EC%8A%A4%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8_%EA%B2%8C%EC%8B%9C%ED%8C%90.png)
+
