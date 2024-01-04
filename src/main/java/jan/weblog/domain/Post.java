@@ -5,10 +5,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Getter;
 
-import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -41,7 +38,7 @@ public class Post {
         comment.setPost(this);
     }
 
-    //== 게시글생성 메서드==//
+    //== 생성 메서드==//
     public static Post createPost(Member member) {
         Post post = new Post();
         post.setMember(member);

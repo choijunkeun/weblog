@@ -3,9 +3,10 @@ package jan.weblog.domain;
 
 import jakarta.persistence.*;
 import lombok.Getter;
+import lombok.Setter;
 
 @Entity
-@Getter
+@Getter @Setter
 public class Comment {
 
     @Id @GeneratedValue
@@ -17,13 +18,4 @@ public class Comment {
     private Post post;
 
     private String comment;    // 댓글 내용
-
-
-    /* 연관관계편의메서드 */
-    public void setPost(Post post) {
-        this.post = post;
-        post.getComment().add(this);
-    }
-
-
 }
