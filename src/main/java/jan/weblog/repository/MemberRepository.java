@@ -7,6 +7,6 @@ import java.util.List;
 
 public interface MemberRepository extends JpaRepository<Member, Long> {
 
-    // select m from Member m where m.userId = ?
-    List<Member> findByUserId(String userId);
+    // select m from Member m where m.memberEmail = ?
+    List<Member> findByMemberEmail(String memberEmail);
 }

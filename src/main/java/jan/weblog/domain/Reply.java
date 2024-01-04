@@ -7,15 +7,15 @@ import lombok.Setter;
 
 @Entity
 @Getter @Setter
-public class Comment {
+public class Reply {
 
     @Id @GeneratedValue
-    @Column(name = "comment_id")
+    @Column(name = "reply_id")
     private Long id;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "post_id")
     private Post post;
 
-    private String comment;    // 댓글 내용
+
 }
